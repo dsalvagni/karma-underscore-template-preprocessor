@@ -13,7 +13,7 @@
   "keywords": [
     "karma",
     "karma-plugin",
-    "karma-preprocesor",
+    "karma-preprocessor",
     "underscore"
   ],
   "author": {
