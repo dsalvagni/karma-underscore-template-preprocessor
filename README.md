@@ -11,6 +11,9 @@ npm install karma-underscore-template-preprocessor --save-dev
 karma.conf.js
 
 ```
+
+files: ["underscore.min.js","**/*.jst"],
+
 preprocessors: {
     "**/*.jst": ["underscoreTemplate"]
 },
