@@ -1,0 +1,32 @@
+{
+  "name": "karma-underscore-template-preprocessor",
+  "version": "1.0.0",
+  "description": "Karma preprocessor for underscore templates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsalvagni/karma-underscore-template-preprocessor.git"
+  },
+  "keywords": [
+    "karma",
+    "karma-plugin",
+    "karma-preprocesor",
+    "underscore"
+  ],
+  "author": {
+    "name": "Daniel Salvagni",
+    "email": "danielsalvagni@gmail.com",
+    "url": "https://github.com/dsalvagni"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsalvagni/karma-underscore-template-preprocessor/issues"
+  },
+  "homepage": "https://github.com/dsalvagni/karma-underscore-template-preprocessor#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
