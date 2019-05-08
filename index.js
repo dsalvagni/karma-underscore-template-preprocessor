@@ -1,9 +1,4 @@
-var _, createUnderscorePreprocessor, createTemplateName, ucfirst;
-
-ucfirst = function(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-};
-
+var _, createUnderscorePreprocessor, createTemplateName;
 _ = require("underscore");
 
 createTemplateName = function(file, log) {
@@ -13,7 +8,7 @@ createTemplateName = function(file, log) {
     folder = lastFolder === "templates" ? "" : lastFolder,
     fullFileName = folders[folders.length - 1],
     fileNameParts = fullFileName.split("."),
-    fileName = folder ? ucfirst(fileNameParts[0]) : fileNameParts[0];
+    fileName = fileNameParts[0];
 
   log.debug('Processing "%s".', folder + fileName);
 

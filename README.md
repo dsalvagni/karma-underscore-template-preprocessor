@@ -29,5 +29,6 @@ underscoreTemplatePreprocessor: {
 
 
 # Result on your test files
-For a given template file locate in: `folder/templates/meeting/item.jst` > `Namespace.templates.meetingItem()`;
+For a given template file locate in: `folder/templates/meeting/item.jst` > `Namespace.templates.meetingitem()`;
+For a given template file locate in: `folder/templates/meeting/Item.jst` > `Namespace.templates.meetingItem()`;
 For a given templatee located on template root folder: `folder/templates/item.jst` > `Namespace.templates.item()`;
