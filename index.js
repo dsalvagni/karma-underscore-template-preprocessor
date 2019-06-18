@@ -3,9 +3,13 @@ _ = require("underscore");
 
 createTemplateName = function(file, log) {
   var path = file.originalPath,
-    folders = path.split("/"),
-    lastFolder = folders[folders.length - 2].toLowerCase(),
-    folder = lastFolder === "templates" ? "" : lastFolder,
+    foldersAfterTemplates = path.split(/templates/i);
+    folders = foldersAfterTemplates.length ? foldersAfterTemplates[1].split("/") : foldersAfterTemplates[0],
+    foldersJoin = folders
+      .slice(0, -1)
+      .join("")
+      .toLowerCase(),
+    folder = foldersJoin,
     fullFileName = folders[folders.length - 1],
     fileNameParts = fullFileName.split("."),
     fileName = fileNameParts[0];
